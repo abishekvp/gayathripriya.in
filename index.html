@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="./index.css">
     
     <script>
-        window.onload = function() {
-            document.getElementById("contact").style.display = 'none';
-        };
+
         function contact() {
             var x = document.getElementById("contact");
             if (x.style.display === "none") {
@@ -145,6 +143,11 @@
     </script>
 </head>
 <body>
+    <script>
+        window.onload = function() {
+            document.getElementById("contact").style.display = 'none';
+        };
+    </script>
     <div id="snow" count="200"></div>
     <input id="toggle-snow" type="checkbox" style="display: none;" checked="true" onclick="showSnow(this.checked == true)">
     <img class="snowland" src="./img/snow.png" alt="">
