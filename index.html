@@ -143,11 +143,6 @@
     </script>
 </head>
 <body>
-    <script>
-        window.onload = function() {
-            document.getElementById("contact").style.display = 'none';
-        };
-    </script>
     <div id="snow" count="200"></div>
     <input id="toggle-snow" type="checkbox" style="display: none;" checked="true" onclick="showSnow(this.checked == true)">
     <img class="snowland" src="./img/snow.png" alt="">
@@ -200,7 +195,7 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" style="display: none;">
         <button type="button" onclick="contact()" id="close">X</button>
         <form action="" method="post">
             <input type="text" name="username" id="username" placeholder="Name">
